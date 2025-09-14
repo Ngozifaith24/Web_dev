@@ -1,0 +1,115 @@
+
+<!-- ## 🎯 Practice Exercise 8
+**Task:** Create a complete accessible webpage with:
+- Proper document structure with semantic elements
+- Accessible navigation menu
+- Contact form with validation
+- Images with proper alt text
+- Correct heading hierarchy -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="background-color:#d896ff; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+        <h2 style="color: #660066; font-size: 25px; text-align: center;">Welcome to my Blog </h2>
+        
+        <article style="background-color:#d896ff; padding: 20px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid #d896ff;">
+            <header style="border-bottom: 1px solid #660066; padding-bottom: 10px; margin-bottom: 15px;">
+           <nav style=" background-color: #d896ff; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+            <ul style="list-style: none; margin: 0; padding: 0;">
+                <li style="display: inline-block; margin-right: 20px;">
+                    <a href="#home" style="color: #660066; text-decoration: none; font-weight: bold;">Home</a>
+               </li>
+               <li style="display: inline-block; margin-right: 20px;">
+                <a href="#about" style="color:#660066; text-decoration: none; font-weight: bold;">About</a>
+            </li>
+            <li style="display: inline-block; margin-right: 20px;">
+                <a href="#services" style="color:#660066; text-decoration: none; font-weight: bold;">Services</a>
+            </li>
+            <li style="display: inline-block; margin-right: 20px;">
+                <a href="tel: +2348137899155" href="mailto:ngozi.omuekwu@gmail.com" style="color: #660066; text-decoration: none;font-weight: bold;">Contact</a>
+            </li>
+            </ul>
+        </nav>
+           </header>
+
+           <div style="margin-bottom: 15px; border-radius: 10px; border-width: 20px solid #660066; padding: 20px; ">
+            <figure style="margin: 0; text-align: center;">
+                  <img src="../Assets/Perfume shop with cartoon painting.jpg"  
+                  alt="Our Store"
+                  style="border-radius: 8px; max-width: 100%; width: 100;">
+                  <figcaption style="margin-top:8px; max-width: 100%; color: #660066;"><strong>Our Store</strong></figcaption>
+          </div>
+         <main style="background-color: #d896ff; padding: 20px; border-radius: 8px; margin-bottom: 20px; border: 4px solid #660066;">
+            <section id="Home" style="margin-bottom: 30px;">
+                <h3 style="color: #660066; font-weight: bold;">Welcome to Choose 'N' Scent </h3>
+                <p style="color: #660066; font-size: larger; text-justify: auto; text-align: justify;">Step into a world where fragrance meets confidence. At Choose 'N' Scent, we believe the way you smell is more than just a scent it's a statement of who you are. Our perfumes and body deodorants are crafted to help you feel fresh, confident, and comfortable in every space you enter. Let your scent speak before you do.</p>
+            </section>
+
+            <section id="About" style="margin-bottom: 30px;">
+                <h3 style="color: #660066; font-weight: bold;">About Us</h3>
+                <p style="color: #660066; font-size: larger; text-justify: auto; text-align: justify;">Choose 'N' Scent is a brand built with passion and purpose. We understand that confidence often begins with how you present yourself, and fragrance plays a vital role in that journey.
+                    Our mission is to provide high-quality perfumes and body deodorants that inspire self-assurance and comfort. Every product is thoughtfully selected to give you the freedom to express your personality, enhance your presence, and feel at ease anywhere you go.
+                    We're not just selling scents we're helping people build confidence, create lasting impressions, and embrace the power of fragrance in their everyday lives</p>
+            </section>
+
+            <section id="services" style="margin-bottom: 30px;">
+            <h3 style="color: #660066;">Our Services</h3>
+            <ul style="color:#660066">
+                <li>Sales of good perfumes</li>
+                <li>perfume selection for clients</li>
+                <li>Guidance on perfume useage</li>
+            </ul>
+        </section>
+         </main>
+         <div style="background-color: white; padding: 20px; border-radius: 8px; margin-bottom: 15px; color: #660066;">
+            <h4> Our accessible form </h4>
+            <form>
+                <div style="margin-bottom: 15px;">
+                    <label for="accesible-name" style="display: block ; margin-bottom: 5px; font-weight:bold ;">
+                            Fullname (Required)
+                    </label>
+                    <input type="text" id="accesible-name" name="accesible-name" required
+                           style="width: 70%; padding: 8px; border: 2px solid #d896ff; border-radius: 4px;"
+                           aria-describedby="name-help"
+                           placeholder="Enter your full name">
+                    <p id="name-help" style="font-size: 12px; color: white; margin-top: 5px;">
+                        Please enter your first and last name</p>
+                </div>
+                <fieldset style="border: 2px solid #ddd; border-radius: 5px; padding: 15px; margin-bottom:15px;">
+                    <legend style="font-weight: bold; color: #d896ff;">Preferred Contact</legend>
+                    <div>
+                        <p><label><input type="radio" name="contact" value="email">Email</label></p>
+                        <p><label><input type="radio" name="contact" value="Phone">Phone</label></p>
+                        <p><label><input type="radio" name="contact" value="Whatsapp">Whatsapp</label></p>
+                    </div>
+            </form>
+         </div>
+
+         <aside style="background-color: #660066; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+            <h4 style="color: #d896ff; text-align:left;">Related Links</h4>
+            <ul>
+                <li><a href="https://www.lancome.in/en_IN/beauty-magazine/perfume-blogs/step-by-step-guide-on-how-to-apply-perfume.html#:~:text=Focus%20On%20Pulse%20Points,the%20scent%20throughout%20the%20day." style="color:#d896ff;" >Perfume guidiance</a></li>
+                <li><a href="https://www.clivechristian.com/blogs/perfume-facts/13-facts-that-you-should-know-about-perfume?srsltid=AfmBOoohod5as_bSD7uoDQWyjNL59OE_0DbLc07j5IuCqT45vgLxtzGE" style="color:#d896ff">Perfume useage</a></li>
+                <li><a href="https://stock.adobe.com/ng/search?k=perfumes" style="color:#d896ff">Perfume Images</a></li>
+            </ul>
+         </aside>
+         </div>
+
+           <footer style="border-top: 1px solid #660066; padding-top: 10px; margin-top: 15px; font-size: 14px; color: #d896ff;">
+                   <p style="margin: 0; text-align: center; color: #660066;"> 2025 @ Choose 'N' Scent. All rights reserved.</p>
+                   <p style="margin: 0; text-align: center; color: #660066;"> Your trusted brand for perfumes and body deodorants that boost confidenceand comfort.</p>
+                   <p style="margin: 0; text-align: center; color: #660066;"> Smell good. Feel good. Be confident.</p>
+                   
+           </footer>
+        </article>
+
+
+    </div>
+</body>
+</html>
