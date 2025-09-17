@@ -1,0 +1,1 @@
+![card_design](https://github.com/user-attachments/assets/5f70d1d0-161b-423a-a6e7-3f2c18fe3473)
