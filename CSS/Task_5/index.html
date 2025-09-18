@@ -1,0 +1,106 @@
+<!-- ## 🎯 Practice Exercise 1
+
+**Task:** Create a "Sticky Header" layout
+
+**Requirements:**
+- Create a header that stays at the top when scrolling (fixed position)
+- Include a navigation menu with inline-block items
+- Add some content below that you can scroll through
+- Use proper z-index to ensure header stays on top -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: #f8f9fa;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        height: 400px;
+        overflow-y: scroll;
+        border: 2px solid #dee2e6;
+        color: black;
+    }
+   .navigation-demo {
+        background-color: #fd1d73;
+        padding: 15px;
+        border-radius: 4px;
+        text-align: center;
+        position: sticky;
+        margin-bottom: 10px;
+        font-weight: bold;
+        top: 0;
+        z-index: 1000;
+      
+        
+    }
+   .nav-item {
+        display: inline-block;
+        padding: 8px 16px;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-right: 5px;
+        border: 2px solid;
+       
+        
+       
+    }
+      .nav-item:hover {
+        background-color: #e4e6e9;
+        color: rgb(17, 17, 15);
+    
+    }
+    .content-section{
+         background-color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        height: 150px;
+    }
+    .content-section h4{
+         margin-top: 0;
+        color: #fd1d73
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        
+            <nav class="navigation-demo">
+                <a href="#" class="nav-item">Home</a>
+                <a href="#" class="nav-item">About</a>
+                <a href="#" class="nav-item">Services</a>
+                <a href="#" class="nav-item">Contact</a>
+            </nav>
+        
+        <div class="content-section">
+        <h4>Who Am I</h4>
+        <p> Ngozi is a dedicated researcher in the field of medical entomology, with a current focus on insecticide resistance in Anopheles mosquitoes. Her project involves molecular genotyping (Ace-1 mutation) using TaqMan qPCR, resistance bioassays, and Sanger sequencing for resistance allele confirmation.</p>
+        
+    </div>
+    
+    <div class="content-section">
+        <h4>What is she doing</h4>
+        <p>  She is currently pursuing a Master’s degree in Microbial Genetics and Biotechnology at Covenant University, and your research interests include malaria, antimicrobial resistance, cancer, drug discovery, and vector control strategies</p>
+    </div>
+    
+    <div class="content-section">
+        <h4>Her Community involvement</h4>
+        <p>she have served in community health outreaches, leadership roles, and volunteering projects (such as malaria campaigns, free medical checkups, and student welfare support). She is also an experinced graphics designer, product design student, and Christian content creator (with her page Datchosengurl)</p>
+    </div>
+    
+    <div class="content-section">
+        <h4>Her Passion</h4>
+        <p> she is passionate about global health, policy, and sustainable healthcare for low-income communities, with career aspirations that include joining the World Health Organization and contributing to the Sustainable Development Goals (SDGs).</p>
+    </div>
+    </div>
+</body>
+
+</html>

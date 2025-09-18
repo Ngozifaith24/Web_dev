@@ -1,0 +1,1 @@
+![favourite_quote](https://github.com/user-attachments/assets/3eaeeec9-13f0-4c9b-82c3-ab1707ea4c42)
